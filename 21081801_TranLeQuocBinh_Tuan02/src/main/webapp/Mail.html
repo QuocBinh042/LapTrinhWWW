@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Mail</title>
+</head>
+<body>
+	<h2>Form gửi mail</h2>
+    <form action="sendEmail" method="post" enctype="multipart/form-data">
+        <label for="recipient">Người nhận:</label><br>
+        <input type="email" id="recipient" name="recipient" required><br><br>
+
+        <label for="subject">Tiêu đề:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="body">Nội dung:</label><br>
+        <textarea id="body" name="body" rows="5" cols="50" required></textarea><br><br>
+
+        <label for="attachment">File đính kèm:</label><br>
+        <input type="file" id="attachment" name="attachment"><br><br>
+
+        <button type="submit">Gửi mail</button>
+    </form>
+</body>
+</html>
